@@ -6,7 +6,7 @@ concurrency:
   cancel-in-progress: true
   
 env:
-  RUNTIME_VERSION: 17
+  RUNTIME_VERSION: 8
 
 jobs:
   build:
