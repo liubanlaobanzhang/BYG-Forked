@@ -1,4 +1,4 @@
-name: build
+name: build-1.19
 
 on: [pull_request, push]
 
@@ -10,17 +10,17 @@ jobs:
 
       matrix:
 
-        java: [16]
+        java: [18]
 
-        os: [ubuntu-20.04]
+        os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
 
     steps:
 
-      - name: checkout repository
 
-        uses: actions/checkout@v2
+
+
 
       - name: validate gradle wrapper
 
